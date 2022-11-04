@@ -1,0 +1,158 @@
+/* GLOBAL STYLING */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace, sans-serif;
+}
+
+body {
+  font-family: inherit;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  min-height: 100vh;
+  color: #fff;
+  background-color: rgb(119, 190, 119);
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+header,
+main {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #fff;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+header .fa-youtube {
+  font-size: 5rem;
+  color: crimson;
+}
+
+h1 {
+  font-size: 1.75rem;
+  text-align: center;
+  display: block;
+}
+
+main {
+  margin-top: 10px;
+}
+
+section {
+  position: relative;
+}
+
+ol {
+  margin-left: 30px;
+  word-break: break-all;
+  font-size: 1.25rem;
+}
+
+ol > ul {
+  padding-bottom: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+ul > li {
+  margin-top: 10px;
+}
+
+/* MAIN STYLING */
+
+.submitSection__form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.submitSection__form input,
+.submitSection__form button {
+  font-size: 1.25rem;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.submitSection__form input {
+  width: calc(100%-60px);
+}
+
+.submitSection__form button {
+  min-width: 48px;
+  min-height: 48px;
+  cursor: pointer;
+  background-color: limegreen;
+  color: #fff;
+  letter-spacing: 1.25px;
+  font-weight: bold;
+}
+
+.suggestionSection {
+  padding-top: 20px;
+}
+
+.suggestionSection h2 {
+  padding-bottom: 20px;
+}
+
+.suggestionSection a,
+.suggestionSection a:focus,
+.suggestionSection a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.suggestionSection > p {
+  color: #999;
+  font-weight: bold;
+}
+
+.suggestionSection ul li a,
+.suggestionSection ol li a {
+  transition: all 250ms ease;
+}
+
+.suggestionSection ul li:hover a,
+.suggestionSection ol li:hover a {
+  color: #999;
+}
+
+.suggestionSection ul li:hover {
+  list-style: none;
+}
+
+.offscreen {
+  position: absolute;
+  left: -99999px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  ol {
+    margin-left: 40px;
+    font-size: 1.5rem;
+  }
+}

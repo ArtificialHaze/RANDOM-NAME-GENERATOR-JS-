@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css"
+      integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
+      integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script> -->
+    <link rel="stylesheet" href="./index.css" />
+    <title>Practice</title>
+  </head>
+  <body>
+    <header>
+      <i class="fab fa-youtube"></i>
+      <h1>Random name generator</h1>
+    </header>
+    <main>
+      <section class="submitSection">
+        <h2 id="formHeading" class="offscreen">Enter your first name</h2>
+        <form action="#" id="submitForm" class="submitSection__form">
+          <input
+            type="text"
+            id="submitSection__textInput"
+            class="submitSection__textInput"
+            required
+            maxlength="25"
+            placeholder="Type here.."
+            aria-labelledby="formHeading"
+          />
+          <button class="submitSection__button" aria-label="submit">
+            <i class="fas fa-check"></i>
+          </button>
+        </form>
+      </section>
+      <section id="suggestionSection" class="suggestionSection hidden">
+        <h2>Suggestions:</h2>
+        <ol></ol>
+        <p>YMMV: Click the name to see if it is taken or not.</p>
+      </section>
+    </main>
+  </body>
+  <script src="./index.js"></script>
+</html>
